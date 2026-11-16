@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy · Dianjiangtai / 点将台</title>
+<style>
+  :root { color-scheme: dark; }
+  body {
+    margin: 0; padding: 32px 16px 80px; background: #14100a; color: #d8cdb4;
+    font: 15px/1.8 "Segoe UI", "Microsoft YaHei", system-ui, sans-serif;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; }
+  h1 { color: #f0dda8; font-size: 26px; letter-spacing: 1px; margin: 0 0 4px; }
+  .sub { color: #8a7d63; font-size: 13px; margin-bottom: 26px; }
+  h2 { color: #e0c48c; font-size: 17px; margin: 28px 0 10px; }
+  p, li { margin: 8px 0; }
+  ul { padding-left: 20px; }
+  b { color: #f0dda8; }
+  code { background: #1d1810; border: 1px solid #3a3120; border-radius: 4px; padding: 1px 6px; font-size: 13px; color: #c9b98d; }
+  .box { background: #1d1810; border: 1px solid #3a3120; border-radius: 10px; padding: 16px 20px; margin: 18px 0; }
+  .hl { color: #9fd39b; }
+  .tip { color: #8a7d63; font-size: 13px; border-top: 1px dashed #3a3120; padding-top: 16px; margin-top: 32px; }
+  a { color: #d8b871; }
+  .langbar {
+    display: flex; gap: 14px; align-items: center; padding-bottom: 18px; margin-bottom: 24px;
+    border-bottom: 1px solid #2a2318; font-size: 13px;
+  }
+  .langbar a { text-decoration: none; padding: 4px 10px; border: 1px solid #3a3120; border-radius: 6px; }
+  .langbar a:hover { background: #1d1810; }
+  .split { border: 0; border-top: 1px solid #2a2318; margin: 52px 0 40px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="langbar">
+    <a href="#en">English</a>
+    <a href="#zh" lang="zh-CN">中文</a>
+  </div>
+
+  <!-- ============================ English ============================ -->
+  <section id="en" lang="en">
+    <h1>Privacy Policy</h1>
+    <div class="sub">
+      For the browser extension <b>Dianjiangtai</b> (store name: <b>Muster · PoE Trade Helper</b>)<br>
+      Effective date: November 10, 2026
+    </div>
+
+    <div class="box">
+      <p><b class="hl">In one line: this extension does not collect, upload, or sell any of your personal information.</b></p>
+      <p>No account system, no analytics, no ads, no third-party tracking scripts. All settings stay in your own browser.</p>
+    </div>
+
+    <h2>1. What the extension does</h2>
+    <p>Dianjiangtai is a helper tool that runs on the official Path of Exile trade site. It translates the stat filter panel into Chinese, shows stat tiers (T1, T2, ...), flattens the nested item type picker into one level, and provides a unique item list. It works only inside the trade page.</p>
+
+    <h2>2. What page content the extension reads</h2>
+    <p>To work, the extension must read content that is <b>already publicly visible</b> on the trade page, including:</p>
+    <ul>
+      <li>option names and ids of the stat filter panel (to display Chinese names and tier labels);</li>
+      <li>the current control structure of the search filter area (to relocate controls into the panel);</li>
+      <li>item names and property text in search results (for name recognition highlighting).</li>
+    </ul>
+    <p>This content is processed <b>only in your browser's memory</b>. It is never sent to any server and never written to remote storage.</p>
+
+    <h2>3. What the extension stores</h2>
+    <p>The extension stores your preferences <b>locally</b>, for example: feature toggle states, UI language mode, collapsed section states, whether to show the English original text, and the time of the last update check.</p>
+    <ul>
+      <li>Stored in the local storage (<code>localStorage</code>) that the browser provides for the trade site. Keys are prefixed with <code>dj.</code>. Not uploaded, not encrypted-in-transit, not synced across devices.</li>
+      <li>Contains no personally identifiable information.</li>
+      <li>Removed when you uninstall the extension or clear its data. We can neither access nor recover it.</li>
+    </ul>
+
+    <h2>4. Permissions and their purpose</h2>
+    <div class="box">
+      <ul>
+        <li>This extension does <b>not</b> request the <code>storage</code> permission. Preferences live in the trade site's own <code>localStorage</code> (keys prefixed with <code>dj.</code>), containing only toggles and modes, no personal information.</li>
+        <li><code>https://poe.game.qq.com/*</code> and <code>https://*.pathofexile.com/*</code> — the panel is injected only on the official Chinese and international trade sites. The extension does not run on any other website.</li>
+        <li><code>https://dianjiangtai-update.app.workbuddy.host/*</code> — used only to read a plain-text version number file (<code>version.txt</code>) so the panel can show a "new version available" hint. No data is sent; it is a single GET request.</li>
+      </ul>
+    </div>
+
+    <h2>5. Network requests</h2>
+    <p>Apart from loading dictionary and image files bundled inside the package, the extension makes exactly one request, on "check for update", to fetch a version number text such as <code>1.2.3</code>.</p>
+    <p>That request is served by the extension's own server, which may keep regular access logs (IP address, browser User-Agent, timestamp). These logs are used only for troubleshooting and visit counting, are <b>not linked to any account or personal identity</b>, and are not used for advertising or profiling.</p>
+    <p>The extension does <b>not</b> download or execute any remote code. All logic is bundled in the installation package.</p>
+
+    <h2>6. Sharing with third parties</h2>
+    <p>None. We do not sell, rent, or otherwise provide your data to third parties, because no data is collected in the first place.</p>
+    <div class="box">
+      <p><b>Limited Use compliance.</b> This extension follows the Chrome Web Store Limited Use requirements:</p>
+      <ul>
+        <li>User data is <b>not</b> sold or transferred to third parties outside of approved use cases;</li>
+        <li>User data is <b>not</b> used or transferred for purposes unrelated to the extension's single purpose;</li>
+        <li>User data is <b>not</b> used or transferred to determine creditworthiness or for lending purposes.</li>
+      </ul>
+      <p>The extension collects no user data at all, so none of these cases can occur.</p>
+    </div>
+
+    <h2>7. Your choices</h2>
+    <ul>
+      <li>Turn off any feature toggle in the panel at any time; the corresponding logic stops running.</li>
+      <li>Disable or uninstall the extension from your browser's extension manager at any time.</li>
+      <li>Clear the extension's data to delete all local settings.</li>
+    </ul>
+
+    <h2>8. Children's privacy</h2>
+    <p>This extension is intended for Path of Exile players. It is not designed for children and does not knowingly collect information from children.</p>
+
+    <h2>9. Changes to this policy</h2>
+    <p>If a future change to the extension alters how data is handled, this page will be updated and the effective date above revised. Significant changes will also be noted in the extension's release notes.</p>
+
+    <h2>10. Contact</h2>
+    <p>Questions about this policy can be raised in the <b>Reviews</b> section of the extension's store listing page, or in the Chinese community thread on the Caimogu forum: <a href="https://www.caimogu.cc/post/2517714.html" target="_blank" rel="noopener">caimogu.cc/post/2517714.html</a></p>
+    <p>This extension is not affiliated with Grinding Gear Games or Tencent Games. "Path of Exile" and "流放之路" are trademarks of their respective owners, used here only to describe the applicable context.</p>
+  </section>
+
+  <hr class="split">
+
+  <!-- ============================ 中文 ============================ -->
+  <section id="zh" lang="zh-CN">
+    <h1>点将台 · 隐私政策</h1>
+    <div class="sub">适用于浏览器扩展「点将台 · PoE 交易市集助手」　生效日期：2026 年 11 月 10 日</div>
+
+    <div class="box">
+      <p><b class="hl">一句话结论：本扩展不收集、不上传、不出售你的任何个人信息。</b></p>
+      <p>没有账号体系，没有统计埋点，没有广告，没有第三方追踪脚本。所有设置只存在你自己的浏览器里。</p>
+    </div>
+
+    <h2>一、扩展是做什么的</h2>
+    <p>点将台是一个在《流放之路》官方交易市集页面上运行的辅助工具，帮玩家把词缀面板转成中文、显示词缀等级（T 级）、平铺物品类型、列出传奇清单等。它只在市集页面内工作。</p>
+
+    <h2>二、扩展会读取哪些页面内容</h2>
+    <p>扩展需要读取市集页面上<b>已公开显示</b>的内容才能工作，包括：</p>
+    <ul>
+      <li>词缀筛选面板里的选项名称与编号（用于显示中文和 T 级）；</li>
+      <li>搜索条件区域当前的控件结构（用于把控件挪到面板里）；</li>
+      <li>物品搜索结果里的物品名称与属性文本（用于名称识别高亮）。</li>
+    </ul>
+    <p>这些内容<b>只在你的浏览器内存中处理</b>，不发送到任何服务器，也不写入任何远程存储。</p>
+
+    <h2>三、扩展保存了什么</h2>
+    <p>扩展在<b>本机</b>保存你的偏好设置，例如：功能开关状态、界面语言档位、面板折叠状态、是否显示英文对照、上次检查更新的时间。</p>
+    <ul>
+      <li>这些数据存放在浏览器为市集站点提供的本地存储（<code>localStorage</code>）里，键名统一以 <code>dj.</code> 开头，不加密上传、不跨设备同步；</li>
+      <li>不包含任何可识别个人身份的信息；</li>
+      <li>卸载扩展或清除扩展数据后即被删除。我们无法访问、也无法恢复。</li>
+    </ul>
+
+    <h2>四、各项权限的用途</h2>
+    <div class="box">
+      <ul>
+        <li>本扩展<b>不申请</b> <code>storage</code> 权限。偏好设置直接存在市集站点自己的 <code>localStorage</code> 里（键名以 <code>dj.</code> 开头），内容只有开关与档位，不含任何个人信息。</li>
+        <li><code>https://poe.game.qq.com/*</code>、<code>https://*.pathofexile.com/*</code> —— 扩展只在国服与国际服的交易市集页面注入面板，不在其他网站运行。</li>
+        <li><code>https://dianjiangtai-update.app.workbuddy.host/*</code> —— 仅用于读取一个纯文本版本号文件（<code>version.txt</code>），以便在面板角落提示「有新版本」。不发送任何数据，只做一次 GET 请求。</li>
+      </ul>
+    </div>
+
+    <h2>五、网络请求说明</h2>
+    <p>除加载扩展自身打包在内部的词典与图片文件外，本扩展只在「检查更新」时发起一次请求，取回形如 <code>1.2.3</code> 的版本号文本。</p>
+    <p>该请求由扩展的服务器承担，服务器可能按常规记录访问日志（IP 地址、浏览器 User-Agent、时间）。这些日志仅用于排查故障与统计访问量，<b>不与任何账号或个人身份关联</b>，也不用于广告或用户画像。</p>
+    <p>扩展<b>不会</b>下载或执行任何远程代码；所有逻辑都打包在安装包内。</p>
+
+    <h2>六、与第三方共享</h2>
+    <p>不共享。我们不出售、不出租、不以任何形式向第三方提供你的数据，因为本来就没有收集。</p>
+    <div class="box">
+      <p><b>Limited Use（有限使用）合规声明</b>：本扩展遵守 Chrome 应用商店的有限使用要求——</p>
+      <ul>
+        <li>不出售用户数据，也不在获批用途之外向第三方转移用户数据；</li>
+        <li>不将用户数据用于与本扩展单一用途无关的目的；</li>
+        <li>不将用户数据用于信用评估或借贷相关决策。</li>
+      </ul>
+      <p>本扩展不收集任何用户数据，上述情形均不会发生。</p>
+    </div>
+
+    <h2>七、你的选择</h2>
+    <ul>
+      <li>可以在扩展面板里随时关闭任意功能开关，关闭后对应逻辑不再运行；</li>
+      <li>可以随时在浏览器扩展管理页停用或卸载扩展；</li>
+      <li>清除扩展数据即可删除全部本地设置。</li>
+    </ul>
+
+    <h2>八、儿童隐私</h2>
+    <p>本扩展面向《流放之路》玩家，不针对儿童设计，也不会有意收集儿童信息。</p>
+
+    <h2>九、政策变更</h2>
+    <p>若将来功能变化导致数据处理方式改变，本页面会同步更新并修改顶部生效日期。重大变更会在扩展更新说明中提示。</p>
+
+    <h2>十、联系方式</h2>
+    <p>对本政策有疑问，可在扩展商店页的「评论」区留言，或在采蘑菇论坛的扩展发布帖下回复：<a href="https://www.caimogu.cc/post/2517714.html" target="_blank" rel="noopener">caimogu.cc/post/2517714.html</a></p>
+    <p>本扩展与 Grinding Gear Games、腾讯游戏均无隶属关系。「流放之路」「Path of Exile」为各自权利人的商标，此处仅用于说明适用场景。</p>
+  </section>
+
+  <div class="tip">本页面为扩展的官方隐私政策，中英双语同页，链接可直接用于 Microsoft Edge 加载项商店与 Chrome 应用商店的隐私政策地址栏。<br>This page is the official privacy policy of the extension, in both English and Chinese, and its URL can be used directly in the privacy policy field of the Microsoft Edge Add-ons store and the Chrome Web Store.</div>
+</div>
+</body>
+</html>
